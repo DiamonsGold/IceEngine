@@ -56,6 +56,8 @@ Ice Engine is a 2D game engine written in C, using CSFML 2.2.
     - <span style="color:#3AD900">sfVideoMode</span>: Mode
     - <span style="color:#3AD900">sfRenderWindow</span>: Window
     - <span style="color:#3AD900">sfColor</span>: Color
+    - <span style="color:#FF7200">int</span>: Fps
+    - Clear
     - Display
     - Destroy
 
@@ -79,8 +81,10 @@ Ice Engine is a 2D game engine written in C, using CSFML 2.2.
     - OnHover
 
 - <span style="color:#FAD000">Game_t</span>
+    - <span style="color:#FF7200">char *</span>: Name
     - <span style="color:#FAD000">Window_t</span>
     - <span style="color:#FAD000">Mouse_t</span>
+    - <span style="color:#3AD900">sfEvent</span>: Event
     - <span style="color:#FAD000">List_t</span>: Scenes
     - <span style="color:#FF7200">void *</span>: Component
     - Destroy

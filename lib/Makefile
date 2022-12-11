@@ -8,10 +8,12 @@
 all:
 	make -C ./ice/
 	make -C ./list/
+	make -C ./engine/
 
 clean:
 	make fclean -C ./ice/
 	make fclean -C ./list/
+	make fclean -C ./engine/
 
 fclean:		clean
 

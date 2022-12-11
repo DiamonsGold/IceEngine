@@ -5,7 +5,7 @@
 ## Makefile
 ##
 
-NAME	=	liblist.a
+NAME	=	libengine.a
 SRC		=	list_create.c	\
 			list_add.c		\
 			list_get.c		\
