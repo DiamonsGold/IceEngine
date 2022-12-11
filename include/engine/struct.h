@@ -55,8 +55,9 @@
         mouse_t *mouse;
         event_t event;
         sfClock *clock;
-        void (*update)(struct scene_s *scene, void *game_v);
-        void (*display)(struct scene_s *scene, void *game_v);
+        list_t *game_objects;
+        void (*update)(struct scene_s *scene);
+        void (*display)(struct scene_s *scene);
         void (*destroy)(struct scene_s *scene);
     } scene_t;
 
@@ -68,7 +69,8 @@
         list_t *scenes;
         scene_t *current_scene;
         void *component;
-        void (*destroy)(struct game_s *window);
+        void (*display)(struct game_s *game);
+        void (*destroy)(struct game_s *game);
     } game_t;
 
 #endif /* !ENGINE_STRUCT_H */

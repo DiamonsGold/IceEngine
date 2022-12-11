@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include "engine/scene.h"
 #include "engine/event.h"
+#include "list.h"
 
 static scene_t *create_scene(game_t *game)
 {
@@ -16,8 +17,9 @@ static scene_t *create_scene(game_t *game)
     scene->mouse = &game->mouse;
     scene->clock = game->clock;
     scene->event = get_event();
+    scene->game_objects = list_create();
     scene->update = NULL;
-    scene->display = NULL;
+    scene->display = display_scene;
     scene->destroy = destroy_scene;
 
     return scene;

@@ -8,7 +8,7 @@
 NAME		=	engine
 
 CC			=	gcc
-CFLAGS		=	-I./include/ -Wall -Wextra
+CFLAGS		=	-I./include/ -Wall -Wextra -g
 LDFLAGS		=	-L./lib/
 LDLIBS		=	-lice				\
 				-lengine			\

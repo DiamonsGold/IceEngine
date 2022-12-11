@@ -8,6 +8,8 @@
 #ifndef ENGINE_CORE_H
     #define ENGINE_CORE_H
 
-    void run(void);
+    #include <engine/struct.h>
+
+    int run(game_t *game);
 
 #endif /* !ENGINE_CORE_H */

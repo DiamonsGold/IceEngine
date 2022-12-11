@@ -17,6 +17,7 @@ static game_t *create_game(char *name)
     game->clock = sfClock_create();
     game->scenes = list_create();
     game->component = NULL;
+    game->display = display_game;
     game->destroy = destroy_game;
 
     return game;

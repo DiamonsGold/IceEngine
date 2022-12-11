@@ -12,6 +12,8 @@
 
     game_t *get_game(char *name);
 
+    void display_game(game_t *game);
+
     void destroy_game(game_t *game);
 
 #endif /* !ENGINE_GAME_H */

@@ -12,6 +12,8 @@
 
     scene_t *get_scene(game_t *game);
 
+    void display_scene(scene_t *scene);
+
     void destroy_scene(scene_t *scene);
 
 #endif /* !ENGINE_SCENE_H */

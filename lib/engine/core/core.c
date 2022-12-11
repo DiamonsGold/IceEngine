@@ -10,15 +10,12 @@
 #include "engine/window.h"
 
 
-int run(void)
+int run(game_t *game)
 {
-    game_t *game = get_game("IceEngine");
-
     while (sfRenderWindow_isOpen(game->window.window)) {
-
         game->current_scene->event.events(game->current_scene);
-        //update(&game);
-        //display(&game);
+        //game->current_scene->update(game->current_scene);
+        game->display(game);
     }
 
     game->destroy(game);
